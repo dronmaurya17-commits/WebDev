@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* .box makes every class of box aqua */
+        .box{
+            background-color: aqua;
+        }
+
+        /* .box1 makes only the class box1 green */
+        .box1{
+           color: rgb(223, 18, 18);
+           padding: 10px;
+           margin: 25px;
+           border: 2px solid rgb(21, 18, 173);
+           height: 200px;/* This height is of content only */
+           box-sizing: border-box; /* This height is of Border+Padding */
+        }
+
+/* Margin Collapse:-Agar box1 ke bottom se dekhke toh dono boxes mei bas 25px ka margin hai joki 50px hona chaiye tha */
+
+        .box2{
+           color: rgb(223, 18, 18);
+           padding: 10px;
+           margin: 25px;
+           border: 2px solid rgb(233, 7, 7);
+           height: 200px;
+           box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Giving multiple classes to box -->
+    <div class="box box1">This is the box 1</div>
+    <div class="box box2">This is the box 2</div>
+</body>
+</html>

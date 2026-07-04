@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .container{
+            background-color: rgb(226, 232, 121);
+            width: 50vw;
+            height: 40vh;
+    }
+        .box{
+            background-color: rgb(109, 166, 216);
+            height: 4vh;
+            width: 5vw;
+            /* ye decide karengye transition kitni deer ki hogyi etc */
+            transition-property: transform ;
+            transition-duration: 3s;
+            transition-timing-function:ease-in-out ;
+            transition-delay: 1s;
+        }
+        .translate{
+            /* iski help se tansition hogyi */
+            transform:translateX(10%) translateY(10%) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Display inline faults:-(1)Ignore Width and Height
+                       (2)Ignores margin top and bottom
+                       (3)Cant contain block elements properly

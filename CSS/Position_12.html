@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        .box {
+            border: 2px solid blue;
+            border-radius: 5px;
+            padding: 17px;
+            height: 15vh;
+            width: 17vw;
+        }
+
+        .box1 {
+            /*(1)Static position  */
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: rgb(208, 215, 72);
+            /*(2)Relative:-Sirf wahi box move karega jisse karvana chahte*/
+            position: relative;
+            top: -94px;
+            left: 35px;
+            /*z-index: -1; */
+        }
+
+        .box3 {
+            background-color: rgb(82, 219, 169);
+        }
+
+        .box4 {
+            background-color: rgb(220, 119, 167);
+        }
+
+        .box5 {
+            background-color: rgb(225, 181, 228);
+        }
+
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 4px solid purple;
+        }
+
+        .box6{
+        /*(3)Absolute:-nearest position ancestor ke about fix hoga*/
+            position: absolute;
+            top: 0px;
+        }
+        /* (4)Fixed,Sticky,transform,filter and perspective */
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="box box1">This is box1</div>
+    <dv class="box box2">This is box2</div>
+    <div class="box box3">This is box3</div>
+    <div class="box box4">This is box4</div>
+    <div class="box box5">This is box5</div> -->
+
+    <div class="parent">
+
+        <div class="box box6">This is box6</div>
+        <div class="box box7">This is box7</div>
+        <div class="box box8">This is box8</div>
+        <div class="box box9">This is box9</div>
+        <div class="box box10">This is box10</div>
+
+    </div>
+</body>
+
+</html>

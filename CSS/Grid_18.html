@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .item{
+            border: 2px solid blueviolet;
+            height: 55px;
+            width: 55px;
+        }
+        .container{
+            border: 3px solid rgb(143, 7, 61);
+            display: grid;
+            /* Creating 2 col of 100 and 120 px */
+            grid-template-columns: 120px 100px;
+            /* Grid Track:-space between two grid lines
+               Grid Area:-kissi bhi grid ke andar ka area */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

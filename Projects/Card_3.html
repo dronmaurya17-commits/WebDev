@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            background-color: gray;
+            /* Centering the card on the page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            width: 194px;
+            /* Let height grow automatically based on content */
+            height: auto;
+            border-radius: 7px;
+            text-align: center;
+            /* Stops anything from going outside the card */
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+        .image {
+            padding: 2px;
+            text-align: center; /* ✅ Fixed the 'ali' mistake */
+        }
+
+        div img {
+            border-radius: 7px;
+        }
+
+        span {
+            font-size: 14px;
+            padding: 2px;
+            border: 1px solid blue;
+            border-radius: 4px;
+            /* Small gap between the two spans */
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .heading {
+            text-align: left;
+            padding-left: 8px;
+            margin: 0;
+        }
+
+        .heading h4 {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+
+        p {
+            text-wrap: wrap; /* ✅ Fixed the empty value */
+            font-size: 12px;
+            padding: 0 8px;
+            text-align: left;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img src="Card_3.jpg" alt="Card Image" width="188">
+        </div>
+
+        <span>Nature</span>
+        <span>Lake</span>
+
+        <div class="heading">
+            <!-- ✅ Changed h2 to h4 (more suitable for a small card) -->
+            <h4>Uno Tres</h4>
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur 
+               adipisicing elit. Minus alias nemo.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

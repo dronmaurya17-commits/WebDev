@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* Pink Navbar */
+        nav div {
+            background-color: rgb(240, 150, 220);
+            border: 2px solid purple;
+            padding: 20px;
+        }
+
+        /* Main Section (Black background) */
+        main {
+            background-color: black;
+            padding: 20px;
+        }
+
+        /* Green Container with 2 boxes inside */
+        .container {
+            background-color: green;
+            margin: 10px 0;
+            padding: 20px;
+            height: 40vh;
+
+            /* ✅ FLEXBOX - This makes boxes side by side */
+            display: flex;
+            justify-content: space-around;  /* Space between boxes */
+            align-items: center;             /* Center vertically */
+            gap: 20px;                       /* Gap between boxes */
+        }
+
+        /* Both Boxes (Pink and Blue) */
+        .box {
+            flex: 1;             /* Both boxes take equal width */
+            height: 100%;        /* Fill the green container height */
+            border-radius: 4px;
+        }
+
+        /* First box - Pink */
+        .box1 {
+            background-color: rgb(240, 130, 130);
+        }
+
+        /* Second box - Blue */
+        .box2 {
+            background-color: rgb(50, 130, 220);
+        }
+
+        /* The Rounded Text Box */
+        .bottomMain {
+            border: 2px solid whitesmoke;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 25px;   /* ✅ Rounded corners */
+            margin: 20px 40px;     /* Space from left and right */
+        }
+
+        /* White Footer */
+        footer div {
+            border: 2px solid aqua;
+            padding: 10px;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Green container with 2 boxes -->
+        <div class="container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
+
+        <!-- Rounded Text Box -->
+        <div class="bottomMain">
+            Welcome to this Sigma Web Development Express
+        </div>
+    </main>
+
+    <footer>
+        <div></div>
+    </footer>
+</body>
+
+</html>

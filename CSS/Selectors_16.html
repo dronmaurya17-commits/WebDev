@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(11, 214, 146);
+        }
+        .box::first-line{
+            color: rgb(241, 126, 26);
+        } */
+
+        .boxes *{
+            background-color: lightcoral;
+        }
+
+        /* Dynamic insertion of elements*/
+        .boxes::before{
+            content: "Youre running from the good boy";
+        }
+
+        input::placeholder{
+            color: rgb(14, 168, 122);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates, nobis similique blanditiis ducimus id quo porro illum minus, quasi quis pariatur vitae?</div>
+        <div class="box">I am box 2</div>
+        <div class="box">I am box 3</div>
+        <input type="text" placeholder="Enter name">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+  
+      /*Declaring variables in css is different use the root word*/
+        :root{
+            /* (1)Global Variable */
+            --color:rgb(108, 108, 182);
+            --seccolor:rgb(86, 86, 160);
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+       .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;/*nav ek hi line mei aaega*/
+        }
+
+
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+
+        ul li:first-child{
+            /* (2)Local Variable */
+            --color:rgb(219, 133, 147);
+            background-color: var(--color);
+        }    
+
+        ul li:first-child{
+            /* (3)IF color naamka variable exist na kare toh*/
+            background-color: var(--color,rgb(221, 95, 137));
+        }   
+
+        .container{
+            background-color: var(--seccolor);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum, sunt inventore neque animi similique in itaque dolorum. Nam adipisci cupiditate error necessitatibus sapiente commodi laborum hic fugiat officia distinctio consequuntur at nostrum enim, corrupti voluptates nulla ratione quo quidem labore soluta ipsam obcaecati dolore.
+    </div>
+
+</body>
+</html>

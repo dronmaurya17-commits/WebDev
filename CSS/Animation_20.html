@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: rgb(159, 95, 214);
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: rgb(86, 208, 200);
+            animation:lec20Animation;
+            animation-duration: 3s;
+        }
+
+        /* Making an Animation */
+        @keyframes lec20Animation{
+            from{
+
+            }
+            to{
+                transform: translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

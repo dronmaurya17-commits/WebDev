@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear keyword</title>
+    <style>
+        .cards{
+            border: 2px solid saddlebrown;
+            display: flow-root;/*humari image jo box ke bahar ja rahi thi ab vo andar aajaegyi*/
+        }
+        img{
+             float: right; /*float ki help se ab hum right mei image lagake left mei words likh paengye*/
+        }
+        .box{
+            border: 2px solid rgb(21, 134, 199);
+        }
+        .box:nth-child(2){/*This line means agar box aapne parent ka 2nd child hai toh aqua kardo.
+                            This line doesnt means ki box ka nth child kon hai*/
+            background-color: aqua;
+            clear: right;/*2nd box ke right se overflow nhi karna chaiye ab koi element*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="box">
+            <img src="List Image.png" alt="" width="230">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sequi asperiores incidunt ratione in, ad hic distinctio sapiente animi dolore aperiam eius minus!
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas ratione distinctio animi enim soluta! Sit, incidunt quisquam! Aliquam, esse minus laborum, possimus expedita voluptates sint qui, natus harum facere error eius. Qui, tempore tenetur? Esse quaerat, quam quae sapiente deleniti, deserunt aliquid aliquam minus accusantium numquam odio voluptas nihil.</div>
+        <div class="box">I am box 3</div>
+    </div>
+</body>
+
+</html>

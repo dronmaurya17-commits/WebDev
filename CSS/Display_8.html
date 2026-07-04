@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .box1{
+            border: 2px solid blueviolet;
+            /*display: inline;This makes the block element inline.Also inline mei top height include nahi hoti*/
+            display: inline-block;
+        }
+        .box2{
+            border: 2px solid peru;
+            /* display: none; ye box gayab kar dega sirf text rahega */
+            /* visibility:hidden; ye box aur text gayab kar dega lekin uska space as it is rhaga */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am the box1</div>
+    <div class="box box2">I am the box2</div>
+    <span>This is the span block</span>
+</body>
+</html>

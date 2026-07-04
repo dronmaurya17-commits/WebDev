@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+
+        /* (1)Element Selector 
+         div {
+            color: rgb(94, 21, 91);
+            background-color: peachpuff;
+        } */
+
+        /* (2)Class Selector 
+        .red{
+            background-color: greenyellow;
+            color: darkblue;
+        }*/
+
+        /* (3)ID Selector 
+        #green{
+            background-color: burlywood;
+            color: darkmagenta;
+        } */
+
+        /* (4)Child Selector 
+        div > p {
+            color: darkgreen;
+            background-color: rgb(193, 201, 91);
+        } */
+
+        /* (5)Decendent Selector 
+        div p {
+            color: rgb(139, 3, 128);
+            background-color: rgb(119, 206, 194);
+        } */
+
+        /* (6)Universal Selector 
+        * {
+            margin: 30;
+            padding: 45;
+        } */
+
+        /* (7)Pseudo Selector 
+        a:visited{
+            color: yellow;
+        }
+
+        Jab link pe click karogye toh ye color change kar dega
+        a:active{
+            background-color: olive;
+        }
+
+        Hover karne pe color change hoga
+        a:hover{
+            background-color: rgb(96, 197, 96);
+        } */
+
+        /* (8)Attribute Selector */
+        [data-x=attribute]{
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        This is para tag inside the div tag
+    </div>
+
+    <div class="red">
+        Selecting the specific div for color using the Class
+    </div>
+
+    <div id="green">
+        Selecting specific div using the ID
+    </div>
+
+    <div>
+        <p>Using the Child selector to color the para inside the div tag</p>
+    </div>
+
+    <div>
+        <article>
+            <p>This para is inside article(which is inside div) yet it get colored.Inshort div ke andar koi aur cheez kyu na ho lekin agar para hai toh ye color hoga hi hoga using the Decendent</p>
+        </article>
+    </div>
+
+    <div>
+        After visiting the link it got yellow using the Pseudo Selector
+        <a href="https://www.google2.com">google</a>
+    </div>
+
+    <div data-x="attribute">
+        This is the Attribute selector that works on specific given info
+    </div>
+
+</body>
+</html>

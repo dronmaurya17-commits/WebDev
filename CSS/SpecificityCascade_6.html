@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <!-- Cascade Algorithm:-used to resolve the conflicts -->
+    <style>
+        h1{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+        .cyellow{
+            color: yellow;
+        }
+        .cpurple{
+            color: purple;
+        }
+        p{
+            color: red;
+        }
+        p{
+            color: navy !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- (1)Position & Order of appearance -->
+        <h1 class="red cyellow cpurple">This text get color of the last class name i.e.cpurple</h1>
+    </div>
+
+    <!-- (2)Specificity:-determines the CSS selector inline>ID>Class of attribute etc 
+         (3)Origin:-User Agent Style sheet -->
+
+    <div>
+        <p>Using the important</p> 
+    </div>     
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolor Website</title>
+    <style>
+        /* importing the ballet font style */
+        @import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+        /* making the variable to change the color */
+        :root{
+            --primary-color:rgb(224, 217, 94);
+            --text-color:rgb(213, 39, 39);
+            --secondary-color:rgb(229, 226, 157);
+        }
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            /* background-color: rgb(166, 196, 223); */
+
+            background-color: var(--primary-color);
+
+            /* top-bottom left-right */
+            padding: 12px 0px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            font-family: 'Ballet', cursive;
+            font-size: 20px;
+        }
+        ul li a{
+             color: var(--text-color);
+             text-decoration:double;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
