@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Card</title>
+    <style>
+        .container{
+            display: flex;
+            border: 4px solid rgb(170, 114, 10);
+            border-radius: 14px;
+            width: 45vw;
+            background-color: rgb(206, 207, 182);
+        }
+        .img img{
+            margin: 2px;
+            border-radius: 7px;
+            border: 2px solid rgb(196, 162, 13);
+            display: block;
+
+        }
+        .img{
+            position: relative;
+            display: inline-block;
+        }
+        .bottom-right{
+            text-align:right;
+            color: white;
+            background-color: black;
+            border-radius:4px ;
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            font-size: 10px;
+            padding: 2px 4px;
+        }
+        .text{
+            font-size: 19px;
+            font-style: italic;
+            font-family: cursive;
+            margin: 2px;
+            padding: 7px;
+            background-color: rgb(207, 201, 146);
+            border: 2px solid rgb(177, 177, 110);
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image div -->
+         <div class="img">
+            <img src="https://i.ytimg.com/vi/UzYRQURh_pY/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCuvVlRNxvKcLMpdtUybkODOxsbjw" alt="Loading image">
+            <span class="bottom-right">21:34</span>
+         </div>
+
+         <span class="text">
+            JavaScript Excercise 13 - solutions & shoutouts|<b>Sigma Web Development Course</b>
+         </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+(1)Display inline faults:-(1)Ignore Width and Height
+                       (2)Ignores margin top and bottom
+                       (3)Cant contain block elements properly
+
+(2)Imp:-for better understanding see interview questions and note them also write the outcomes and porblems of the projects
+
+(3)EcmaScript:-java script is based on this and also used for client side server for WWW
+
+(4)Operators in javascript:-
+    (1)In js (==) will compare values not types means "3"==3 ans is true they are equal but to compare them with true values (===)
+    (2)== compare values only not the type but === compares with type means int equals int but int is not equal to string now "3"===3 ans is false
+
+(5)SAAS:-Software as a service 
+
+(6).Lenght() is a function and .length return actual length here
+
+(7)Random number between num1 and num2 = num1 + r(num1-num2)
+
+(8)Browser event:-dom nodes generate those events 
+  **Types of events:-
+  ->Mouse event
+  ->Keyboard event
+  ->form element event
+  ->Document event
+
+(9)Js is Asynchornous in nature  

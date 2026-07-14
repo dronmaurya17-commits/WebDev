@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            height: 45px;
+            width: 54px;
+            padding: 7px;
+            border: 2px solid brown;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <script src="Inserting_12.js"></script>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <script>
+        // Using Append method
+        /* 
+        let div = document.createElement("div");
+        div.innerHTML = "I am inserted by <b>Dron</b>"
+        div.setAttribute("class","created");
+        document.querySelector(".container").append(div);
+         */
+
+         //Using insertAdjacentelement at end position
+         /* 
+         let cont = document.querySelector(".container");
+         cont.insertAdjacentHTML("afterend","<b> I am inserted by insertAdjacent after end position </b>");
+           */
+
+
+    </script>
+</body>
+</html>

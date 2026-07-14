@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event,Event Bubbling,setInterval and setTimeout</title>
+<!--     <style>
+        .child {
+            border: 2px solid rgb(36, 43, 182);
+            background-color: rgb(165, 203, 237);
+            cursor: pointer;
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .childcontainer {
+            margin: 14px;
+            padding: 14px;
+            background-color: rgb(110, 159, 201);
+        }
+
+        .container {
+            margin: 14px;
+            padding: 14px;
+            background-color: rgb(94, 135, 171);
+        }
+    </style> -->
+
+    <!-- Shraddha Khapra -->
+     <style>
+
+     </style>
+</head>
+
+<body>
+    <!-- Method_1 -->
+    <!--     <div class="container">
+        <div class="box">Hey I am box</div>
+    </div>
+    <button id="btn">Click to change Content</button>
+    <script src="Events_14.js"></script> -->
+
+
+    <!-- Method_2:- Event Bubbling -->
+    <!-- Prb we faced is when we click on the child we get alert of container and childcontainer as well now we use the e.stop just to stop this clicking-->
+    <!--     <div class="container">
+        <section class="childcontainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div> -->
+    <!-- 
+    <script>
+        document.querySelector(".child").addEventListener("click",(e) => {
+            e.stopPropagation();
+            alert("Child was clicked");
+        })
+
+        document.querySelector(".childcontainer").addEventListener("click",(e) => {
+            e.stopPropagation();
+            alert("childcontainer was clicked");
+        })
+
+        document.querySelector(".container").addEventListener("click",() => {
+            alert("container was clicked");
+        })
+
+// Changing the color of childcontainer in every 10secs
+        setInterval(() => {
+            document.querySelector(".childcontainer").style.backgroundColor = "green"
+        }, 3000);
+
+
+        /* setTimeout(() => {
+            document.querySelector(".childcontainer").style.backgroundColor = "green"
+        }, 3000); */
+
+
+    </script> 
+ -->
+
+
+
+    <!-- Shraddha Khapra -->
+
+    <button onclick="console.log('button clicked');alert('You Clicked')">Click me </button>
+
+    <script src="Events_14.js"></script>
+</body>
+
+</html>
